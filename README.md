@@ -13,3 +13,6 @@ Please refer to the official Microsoft DeepSpeed library to understand the funda
 • **Balanced expert selection.** We propose *dynamic expert clustering*, facilitating more balanced expert selection.
 
 • **Heterogeneous network-aware data placement.** We propose *topology-aware expert remapping* to fully leverage any type of network configuration.
+
+## How to use
+
