@@ -3,8 +3,8 @@
 
 We will continue updating the framework codes and annotations in the future.
 
-This repository is based on the [DeepSpeed training framework](https://github.com/microsoft/DeepSpeed).  
-Please refer to the official Microsoft DeepSpeed library to understand the fundamentals of DeepSpeed.
+This repository is based on the [DeepSpeed training framework](https://github.com/microsoft/DeepSpeed) and the [Tutel MoE](https://github.com/microsoft/tutel).  
+Please refer to the official Microsoft DeepSpeed and Tutel libraries to understand the fundamentals of DeepSpeed and Tutel.
 
 ## Overview
 
