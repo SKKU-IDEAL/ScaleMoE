@@ -4,11 +4,11 @@ This directory contains four representative deep learning models used for testin
 
 - **BERT**: Bidirectional Encoder Representations from Transformers
 - **GPT**: Generative Pre-trained Transformer
-- **Llama** (In preparation)
+- **Llama** _(In preparation)_
 
 ## Usage in Our Paper
 
-Among these models, **BERT** and **GPT** are selected as the primary benchmarks in our paper to evaluate the effectiveness of the proposed system. They are widely used in natural language processing tasks and serve as strong representatives of modern Transformer-based architectures.
+Among these models, ***BERT*** and ***GPT*** are selected as the primary benchmarks in our paper to evaluate the effectiveness of the proposed system. They are widely used in natural language processing tasks and serve as strong representatives of modern Transformer-based architectures.
 
 ## Purpose
 
