@@ -13,7 +13,7 @@ To build the Docker images, use the following commands:
 
 ```bash
 # For CUDA 11
-docker build -f Dockerfile_cuda11.7 -t my-experiment-cuda11 .
+docker build -f Dockerfile_cuda11.7 -t my-scalemoe-cuda11 .
 
 # For CUDA 12
-docker build -f Dockerfile_cuda12.2 -t my-experiment-cuda12 .
+docker build -f Dockerfile_cuda12.2 -t my-scalemoe-cuda12 .
