@@ -31,3 +31,13 @@ docker build -t scalemoe:latest -f docker/Dockerfile_cuda12.2 .
 # Run the container
 docker run --gpus all -it --rm scalemoe:latest
 
+If you want to use your own environment, please install DeepSpeed and Tutel.
+
+```bash
+#Install deepspeed
+pip install deepspeed
+
+#Install tutel
+git clone https://github.com/microsoft/tutel --branch main
+python3 -m pip uninstall tutel -y
+python3 ./tutel/setup.py install --user
