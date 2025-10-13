@@ -355,7 +355,8 @@ RUN conda create -n deepspeed_env python=3.11.5 -y && \
     triton==2.3.1 \
     typing-extensions==4.9.0 \
     tzdata==2024.1 \
-    urllib3==2.2.1
+    urllib3==2.2.1 && \
+conda run -n deepspeed_env python3 -m pip install -v -U --no-build-isolation git+https://github.com/microsoft/tutel@main -y 
 
 
 ##############################################################################
