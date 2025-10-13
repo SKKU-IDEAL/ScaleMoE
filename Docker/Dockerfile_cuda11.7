@@ -375,7 +375,7 @@ RUN echo "export PATH=${MPI_HOME}/bin:${UCX_HOME}/bin:/usr/local/libevent-${LIBE
 
 # Configure and start the SSH service
 RUN mkdir /var/run/sshd
-RUN echo 'root:root' | chpasswd skku # 设置 root 用户密码
+RUN echo 'root:root' | chpasswd skku # set root user password
 RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 RUN sed -i 's/UsePAM yes/UsePAM no/' /etc/ssh/sshd_config
 
