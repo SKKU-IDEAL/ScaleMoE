@@ -44,3 +44,53 @@ python3 -m pip uninstall tutel -y
 python3 ./tutel/setup.py install --user
 ```
 
+### MoE block Usage
+See folder scalemoe for details
+- **`baseline`**  
+  Runs the **baseline MoE implementation**.  
+  Use this script if you want to reproduce the standard Tutel as baseline behavior with minimal modifications.
+  Use different scripts depending on the CUDA version selected when creating Docker.
+  
+- **`run_adaptive.sh`**  
+  Runs the **Adaptive MoE implementation**.  
+  This script introduces 
+
+- **`run_scalable.sh`**  
+  Runs the **K-means and GA MoE implementation**.  
+  This script introduces
+   
+#### Usage
+Run the desired script with your configuration. For example:
+```bash
+bash scalemoe/scripts/baseline/run_cuda11.sh
+bash scalemoe/scripts/run_adaptive.sh
+bash scalemoe/scripts/run_scalable.sh
+```
+
+### Examples
+ScaleMoE provides out-of-the-box support for running large-scale Mixture-of-Experts (MoE) models such as **BERT-MoE** and **GPT-MoE**. 
+You can find example training scripts and configuration files under the [`models/`](./models) directory.
+We provide a MoE-enhanced BERT implementation based on DeepSpeed and Tutel. 
+This example demonstrates how ScaleMoE optimizations—_such as **adaptive all-to-all communication**, **dynamic expert clustering**, and **topology-aware expert remapping**_—can significantly accelerate BERT training on large-scale distributed environments.
+- **BERT**: Bidirectional Encoder Representations from Transformers
+To run the **BERT-MoE** example:
+- Prepare data
+```bash
+bash models/BERT/data/getdata.sh
+```
+- Run baseline
+```bash
+bash models/BERT/tutel_run.sh
+```
+- Run **adaptive all-to-all communication**
+```bash
+bash models/BERT/adaptive_run.sh
+```
+- Run **dynamic expert clustering**
+```bash
+bash models/BERT/kmean_run.sh
+```
+- Run **topology-aware expert remapping**
+```bash
+bash models/BERT/ga_run.sh
+```
