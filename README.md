@@ -16,7 +16,7 @@ Please refer to the official Microsoft DeepSpeed and Tutel libraries to understa
 
 # How to use
 
-## Environment setting
+### Environment setting
 To use ScaleMoE, users need to install DeepSpeed and Tutel first.
 
 For a quick and consistent setup, we provide a Dockerfile that automatically builds a container including all required dependencies (e.g., CUDA, PyTorch, DeepSpeed, and Tutel).
@@ -44,7 +44,7 @@ python3 -m pip uninstall tutel -y
 python3 ./tutel/setup.py install --user
 ```
 
-## MoE block Usage
+### MoE block Usage
 See folder scalemoe for details
 - **`baseline`**  
   Runs the **baseline MoE implementation**.  
@@ -59,7 +59,7 @@ See folder scalemoe for details
   Runs the **K-means and GA MoE implementation**.  
   This script introduces
    
-## Usage
+### Usage
 Run the desired script with your configuration. For example:
 ```bash
 bash scalemoe/scripts/baseline/run_cuda11.sh
@@ -67,12 +67,12 @@ bash scalemoe/scripts/run_adaptive.sh
 bash scalemoe/scripts/run_scalable.sh
 ```
 
-## Examples
+### Examples
 ScaleMoE provides out-of-the-box support for running large-scale Mixture-of-Experts (MoE) models such as **BERT-MoE** and **GPT-MoE**. 
 You can find example training scripts and configuration files under the [`models/`](./models) directory.
 We provide a MoE-enhanced BERT implementation based on DeepSpeed and Tutel. 
 This example demonstrates how ScaleMoE optimizations—_such as **adaptive all-to-all communication**, **dynamic expert clustering**, and **topology-aware expert remapping**_—can significantly accelerate BERT training on large-scale distributed environments.
-## **BERT**: Bidirectional Encoder Representations from Transformers
+#### **BERT**: Bidirectional Encoder Representations from Transformers
 To run the **BERT-MoE** example:
 - Prepare data
 ```bash
