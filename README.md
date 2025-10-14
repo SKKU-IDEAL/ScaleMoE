@@ -22,7 +22,7 @@ To use ScaleMoE, users need to install DeepSpeed and Tutel first.
 For a quick and consistent setup, we provide a Dockerfile that automatically builds a container including all required dependencies (e.g., CUDA, PyTorch, DeepSpeed, and Tutel).
 Users who prefer an easy setup can simply build the Docker image and start a container to run ScaleMoE without manually configuring the environment.
 
-Please refer to the docker/ directory for detailed instructions and preconfigured files.
+Please refer to the ['docker/'](./docker) directory for detailed instructions and preconfigured files.
 
 ```bash
 # Build the docker image
