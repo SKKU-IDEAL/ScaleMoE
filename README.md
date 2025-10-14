@@ -75,25 +75,29 @@ This example demonstrates how ScaleMoE optimizations—_such as **adaptive all-t
 #### **BERT**: Bidirectional Encoder Representations from Transformers
 To run the **BERT-MoE** example:
 - Prepare data
-```bash
-bash models/BERT/data/getdata.sh
-```
+  ```bash
+  bash models/BERT/data/getdata.sh
+  ```
+- Prepare checkpoints
+  ```bash
+  bash models/BERT/prepare_ck.sh
+  ```
 - Run baseline
-```bash
-bash models/BERT/tutel_run.sh
-```
+  ```bash
+  bash models/BERT/tutel_run.sh
+  ```
 - Run **adaptive all-to-all communication**
-```bash
-bash models/BERT/adaptive_run.sh
-```
+  ```bash
+  bash models/BERT/adaptive_run.sh
+  ```
 - Run **dynamic expert clustering**
-```bash
-bash models/BERT/kmean_run.sh
-```
+  ```bash
+  bash models/BERT/kmean_run.sh
+  ```
 - Run **topology-aware expert remapping**
-```bash
-bash models/BERT/ga_run.sh
-```
+  ```bash
+  bash models/BERT/ga_run.sh
+  ```
 Wait for the execution to complete, and you will obtain the logs and the exploration results in the logs folder like [`models/BERT/logs/`](./models/BERT/logs).
 
 # Publication
