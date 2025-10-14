@@ -101,3 +101,9 @@ To run the **BERT-MoE** example:
 Wait for the execution to complete, and you will obtain the logs and the exploration results in the logs folder like [`models/BERT/logs/`](./models/BERT/logs).
 
 # Publication
+This work has been published in [PACT'25](https://pact2025.github.io/program/).
+## Citations
+```bibtex
+@inproceedings{
+}
+```
