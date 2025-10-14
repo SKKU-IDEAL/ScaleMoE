@@ -59,7 +59,7 @@ See folder scalemoe for details
   Runs the **K-means and GA MoE implementation**.  
   This script introduces
    
-### Usage
+#### Usage
 Run the desired script with your configuration. For example:
 ```bash
 bash scalemoe/scripts/baseline/run_cuda11.sh
