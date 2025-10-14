@@ -94,3 +94,6 @@ bash models/BERT/kmean_run.sh
 ```bash
 bash models/BERT/ga_run.sh
 ```
+Wait for the execution to complete, and you will obtain the logs and the exploration results in the [`logs/`](./models/BERT/logs) folder.
+
+## Publication
