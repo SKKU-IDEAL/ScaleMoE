@@ -8,11 +8,11 @@ Please refer to the official Microsoft DeepSpeed and Tutel libraries to understa
 
 # Overview
 
-• **All-to-all communication optimization.** We propose *adaptive all-to-all communication* to minimize communication volume by removing unnecessary zero padding.
+• **All-to-all communication optimization.** We propose ***adaptive all-to-all communication*** to minimize communication volume by removing unnecessary zero padding.
 
-• **Balanced expert selection.** We propose *dynamic expert clustering*, facilitating more balanced expert selection.
+• **Balanced expert selection.** We propose ***dynamic expert clustering***, facilitating more balanced expert selection.
 
-• **Heterogeneous network-aware data placement.** We propose *topology-aware expert remapping* to fully leverage any type of network configuration.
+• **Heterogeneous network-aware data placement.** We propose ***topology-aware expert remapping*** to fully leverage any type of network configuration.
 
 # How to use
 
