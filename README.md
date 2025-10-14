@@ -72,7 +72,7 @@ ScaleMoE provides out-of-the-box support for running large-scale Mixture-of-Expe
 You can find example training scripts and configuration files under the [`models/`](./models) directory.
 We provide a MoE-enhanced BERT implementation based on DeepSpeed and Tutel. 
 This example demonstrates how ScaleMoE optimizations—_such as **adaptive all-to-all communication**, **dynamic expert clustering**, and **topology-aware expert remapping**_—can significantly accelerate BERT training on large-scale distributed environments.
-- **BERT**: Bidirectional Encoder Representations from Transformers
+#### **BERT**: Bidirectional Encoder Representations from Transformers
 To run the **BERT-MoE** example:
 - Prepare data
 ```bash
